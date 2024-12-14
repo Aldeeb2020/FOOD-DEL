@@ -1,0 +1,44 @@
+.app-download{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-download h2{
+    font-size: 3vw;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.app-download .mobile-app{
+    display: flex;
+    gap: 10px;
+}
+.app-download .mobile-app img{
+    cursor: pointer;
+    transition: .3s;
+}
+.app-download .mobile-app img:hover{
+    scale: 1.1;
+}
+
+
+@media (max-width: 860px){
+    .app-download h2{
+        font-size: 7vw;
+    }
+    .app-download .mobile-app img{
+        width: 200px;
+    }
+}
+@media (max-width: 550px){
+    .app-download h2{
+        font-size: 7vw;
+    }
+    .app-download .mobile-app{
+        flex-direction: column;
+    }
+    .app-download .mobile-app img{
+        width: 100%;
+    }
+}
